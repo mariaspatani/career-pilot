@@ -201,6 +201,10 @@ export default function MenuBoard({ data }) {
           50% { transform: translateY(-15px) scaleX(1.3); opacity: 0.35; }
           100% { transform: translateY(-30px) scaleX(0.7); opacity: 0; }
         }
+        @keyframes fadeIn {
+          0% { opacity: 0; transform: translateY(4px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
         .animate-steam-slow {
           animation: coffee-steam 2.5s infinite ease-in-out;
         }
@@ -288,7 +292,7 @@ export default function MenuBoard({ data }) {
                   className={`flex items-center gap-2 px-6 py-3.5 rounded-t-2xl font-serif text-sm tracking-wider uppercase transition-all duration-300 relative border-b-0 ${
                     activeCategory === cat.id 
                     ? 'bg-[#141b18] text-amber-300 border-2 border-amber-500/60 border-b-transparent shadow-[0_-5px_18px_rgba(245,158,11,0.2)] font-black'
-                    : 'bg-[#1e2924]/80 text-stone-300 hover:text-white hover:bg-[#25332c] border border-stone-750'
+                    : 'bg-[#1e2924]/80 text-stone-300 hover:text-white hover:bg-[#25332c] border border-stone-700'
                   }`}
                 >
                   <Coffee className={`w-4 h-4 ${activeCategory === cat.id ? 'text-amber-300' : 'text-stone-400'}`} />
@@ -488,7 +492,7 @@ export default function MenuBoard({ data }) {
                   <select 
                     value={brewBase}
                     onChange={(e) => setBrewBase(e.target.value)}
-                    className="w-full bg-stone-900/90 border-2 border-amber-850 text-amber-100 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 cursor-pointer shadow-inner font-semibold"
+                    className="w-full bg-stone-900/90 border-2 border-amber-800 text-amber-100 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 cursor-pointer shadow-inner font-semibold"
                   >
                     <option value="" className="bg-[#2c221a]">-- Choose Base --</option>
                     <option value="Single Page App" className="bg-[#2c221a]">Single Page App (SPA)</option>
@@ -504,7 +508,7 @@ export default function MenuBoard({ data }) {
                   <select 
                     value={brewFlavor}
                     onChange={(e) => setBrewFlavor(e.target.value)}
-                    className="w-full bg-stone-900/90 border-2 border-amber-850 text-amber-100 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 cursor-pointer shadow-inner font-semibold"
+                    className="w-full bg-stone-900/90 border-2 border-amber-800 text-amber-100 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 cursor-pointer shadow-inner font-semibold"
                   >
                     <option value="" className="bg-[#2c221a]">-- Choose Flavor --</option>
                     <option value="React" className="bg-[#2c221a]">React (Mild / Interactive)</option>
@@ -521,7 +525,7 @@ export default function MenuBoard({ data }) {
                   <select 
                     value={brewSweetener}
                     onChange={(e) => setBrewSweetener(e.target.value)}
-                    className="w-full bg-stone-900/90 border-2 border-amber-850 text-amber-100 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 cursor-pointer shadow-inner font-semibold"
+                    className="w-full bg-stone-900/90 border-2 border-amber-800 text-amber-100 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 cursor-pointer shadow-inner font-semibold"
                   >
                     <option value="" className="bg-[#2c221a]">-- Choose Sweetener --</option>
                     <option value="Tailwind CSS" className="bg-[#2c221a]">Tailwind Drizzle</option>
@@ -617,7 +621,7 @@ export default function MenuBoard({ data }) {
                               rating: 5
                             });
                           }}
-                          className="bg-amber-400 hover:bg-amber-350 text-stone-950 font-mono text-xs px-4 py-2.5 rounded-xl font-bold flex items-center gap-1.5 shadow-md transition-all cursor-pointer"
+                          className="bg-amber-400 hover:bg-amber-300 text-stone-950 font-mono text-xs px-4 py-2.5 rounded-xl font-bold flex items-center gap-1.5 shadow-md transition-all cursor-pointer"
                         >
                           <Plus className="w-3.5 h-3.5" />
                           Add custom brew to order
@@ -813,7 +817,7 @@ export default function MenuBoard({ data }) {
 
               {inquirySubmitted ? (
                 <div className="py-12 flex flex-col items-center justify-center text-center">
-                  <div className="w-12 h-12 bg-emerald-100 border border-emerald-355 text-emerald-600 rounded-full flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-12 h-12 bg-emerald-100 border border-emerald-300 text-emerald-600 rounded-full flex items-center justify-center mb-4 shadow-sm">
                     <Check className="w-6 h-6 animate-pulse" />
                   </div>
                   <h4 className="font-serif text-[#2c1a11] text-lg font-bold mb-1">Inquiry order received!</h4>
