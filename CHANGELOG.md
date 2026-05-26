@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/anurag3407/career-pilot/compare/v1.27.0...v1.28.0) (2026-05-26)
+
+
+### Features
+
+* add validation for missing AI API environment variables ([32f6a23](https://github.com/anurag3407/career-pilot/commit/32f6a231b92335938ea178b35fd201badae8c019))
+
 # [1.27.0](https://github.com/anurag3407/career-pilot/compare/v1.26.0...v1.27.0) (2026-05-26)
 
 
