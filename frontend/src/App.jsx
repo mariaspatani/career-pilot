@@ -69,6 +69,7 @@ const RepoAnalyzerDashboard = lazy(() => import('./pages/RepoAnalyzer/Dashboard'
 const RepoAnalyzerWorkspace = lazy(() => import('./pages/RepoAnalyzer/Workspace'));
 import ScrollToTop from "./components/ScrollToTop";
 import RainforestCanopy from './components/portfolio/templates/Rainforest_Canopy/index.jsx';
+import Hero from './components/portfolio/templates/Magazine_Editorial/Hero';
 import TestSocialLinks from './pages/TestSocialLinks';
 
 function ProtectedRoute({ children }) {
@@ -310,15 +311,7 @@ function AppRoutes() {
 }
 
 function App() {
-  return (
-    <ThemeProvider>
-      <AuthProvider>
-        <SocketProvider>
-          <AppRoutes />
-        </SocketProvider>
-      </AuthProvider>
-    </ThemeProvider>
-  );
+  return <Hero />;
 }
 
 export default App;
