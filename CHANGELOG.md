@@ -1,3 +1,18 @@
+# [1.84.0](https://github.com/anurag3407/career-pilot/compare/v1.83.0...v1.84.0) (2026-05-29)
+
+
+### Bug Fixes
+
+* address Copilot review feedback ([27b6141](https://github.com/anurag3407/career-pilot/commit/27b61410cf2a1abed02ee2f191320977c28c6677))
+* harden GitHub profile overview data ([fc31a5c](https://github.com/anurag3407/career-pilot/commit/fc31a5c44c69484cb5dfe8803ab0759420ddaf15))
+
+
+### Features
+
+* add GitHub overview card to dashboard with user stats ([e438e7f](https://github.com/anurag3407/career-pilot/commit/e438e7f389808a1bbdd7c35afd90d2daaf869365))
+* add match score badge to job cards and corresponding test ([b1c61c8](https://github.com/anurag3407/career-pilot/commit/b1c61c84a46917b9bb05218f1ab65b80908a6d7e))
+* implement Select component with search and multi-select functionality ([fce6c4a](https://github.com/anurag3407/career-pilot/commit/fce6c4a5e28f1a650b8de4d1c5b52a6160a2c0fa))
+
 # [1.83.0](https://github.com/anurag3407/career-pilot/compare/v1.82.1...v1.83.0) (2026-05-29)
 
 
